@@ -1,10 +1,12 @@
 <div align="center">
 
-# `Recipe Parser`
+# `Recipe Parser` 🍲 🥗 🌮 😋
 
-Parse recipes from your favorite websites and blogs
-to extract and enhance the ingredients and instructions 
-for your meal planning.
+**Parse recipes** from your favorite websites, 
+blogs or social posts <br />
+to `extract` and `enhance` 
+the ingredients and instructions 
+for your **meal planning**.
 
 </div>
 
@@ -15,8 +17,16 @@ but there isn't a good way
 to import them 
 into your favorite meal planning system.
 
-We want to solve our _own_ nutrition 
-and meal planning problem
+So we end up storing them as links
+and then have to click into page
+(which can take several seconds to load)
+read through the whole
+recipe each time.
+This is an inefficient use of time.
+
+We want to 
+**solve our _own_ nutrition 
+and meal planning problem**
 from first principals.
 
 The starting point: recipes. 
@@ -100,14 +110,34 @@ e.g:
 [github.com/forbesg/bbc-good-food-recipe-scraper](https://github.com/forbesg/bbc-good-food-recipe-scraper)
 
 There's nothing new about creating a recipe parser. 
-What's new in this library
+What's new in this library:
+1. **_Extensive_ Tests** - with automated tests and sample data
+2. **_Actively_ Maintained** - if spot anything not working with the parser, please open an issue. 🙏
+3. **Contributions 
 
-## Automate It?
+# Roadmap
 
-We tried using `GPT` to parse the recipes 
-but the results were inconsistent (non-deterministic).
-We _may_ end up using `AI` 
+_Before_ embarking on this project,
+we tried using `GPT` to parse recipes. 
+The results were inconsistent (non-deterministic)
+even with `GPT-4`. 
+So we are hand-crafting parser
+and will collect as much _human_ feedback
+as possible on the quality/consistency of the parser(s).
+We _may_ end up using `AI` (`ML`/`LLMs`) 
 to _enhance_ our parser in the future.
 Especially once we have parsed 20+ websites
+(and a few thousand recipes)
 and can consistently extract valid 
-_training_ data for an ML model. 
+_training_ data for an ML model to reference.
+
+## Extracting Recipe Data from _Images_
+
+We want to be able to take a photo of a recipe
+in a book and have the ingredients, 
+instructions and picture extracted. 
+This will require some ML/OCR work.
+If you would like to contribute to this,
+please leave a comment
+on this issue: 
+[dwyl/recipe-parser/**issues/5**](https://github.com/dwyl/recipe-parser/issues/5)
